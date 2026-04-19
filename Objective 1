@@ -1,0 +1,9 @@
+# OBJECTIVE 1: TREND OVER TIME
+df = df.sort_values("Start_Date")
+
+plt.figure(figsize=(10,5))
+sns.lineplot(x="Start_Date", y="Data Value", data=df, marker='o')
+plt.title("Air Quality Trend Over Time")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
